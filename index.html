@@ -1,0 +1,1236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cuentos de Stovial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+<link rel="stylesheet" href="themes/stovial.css">
+<link rel="stylesheet" href="themes/stovial.min.css">
+<!--<link rel="stylesheet" href="C.min.css">-->
+<link rel="stylesheet" href="jquery.mobile.icons.min.css">
+<script src="jquery-1.12.2.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!--<script src="app.js"></script>-->
+</head>
+<body>
+<!-- menu cuentos -->
+<div data-role="page" id="menu-cuentos" data-transition="flip" data-theme="c" style="background-image:url(wood-background-sm.jpg);">
+
+	<div data-role="header" data-theme="c">
+    <a href="http://stovial.xyz/" style="display:block; margin:auto; position:relative; padding:0;">
+    <img src="logo_flag.png" alt="logo" style="max-height: 110px;">
+    </a>    
+    <h1>Aventuras<h1>
+    </div>	
+    <div role="main" class="ui-content" data-theme="c" style="margin-bottom: 30px;">
+    <img src="ornamento.png" alt="ornamento" style="display:block; margin:auto;">
+        <ul id="lista_cuentos_menu" data-role="listview" data-filter="true" data-filter-placeholder="Buscar cuentos..." data-inset="true">
+        </ul>
+	</div>
+    <div data-role="footer" data-theme="c" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+<!--Contenido desde menu dinamico-->
+
+<div data-role="page" id="cuento-dinamico" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    	<a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+        <h1><h1>
+    </div>	
+    <div role="main" class="ui-content">
+        <div style="color:#000">
+        	<p id="cuento-dinamico-test"></p>
+        </div>
+        
+	<a href="#" class="ui-btn">Final 1</a>
+    <a href="#" class="ui-btn">Final 2</a>
+    <a href="#" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<!--<div id="contenido_dinamico">
+</div>	-->
+
+<!-- cuento 1 -->
+
+<div data-role="page" id="cuento1-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    	<a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+        <h1 id="h1-cuento1"><h1>
+    </div>	
+    <div role="main" class="ui-content">
+        <div style="color:#000">
+        	<p id="cuento1"></p>
+        </div>
+        
+	<a href="#final-1-cuento-1" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-1" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-1" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1 id="h1-cuento1-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-1"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento1-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1 id="h1-cuento1-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-1"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento1-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1 id="h1-cuento1-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-1"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento1-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<!--cuento 2 -->
+
+<div data-role="page" id="cuento2-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1 id="h1-cuento2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento2"></p>
+	<a href="#final-1-cuento-2" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-2" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-2" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-2" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1 id="h1-cuento2-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-2"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento2-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-2" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1 id="h1-cuento2-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-2"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento2-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-2" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1 id="h1-cuento2-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-2"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento2-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<!--cuento 3 -->
+
+<div data-role="page" id="cuento3-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1 id="h1-cuento3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento3"></p>
+	<a href="#final-1-cuento-3" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-3" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-3" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-3" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1 id="h1-cuento3-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-3"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento3-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-3" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1 id="h1-cuento3-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-3"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento3-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-3" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento3-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-3"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento3-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<!--cuento 4 -->
+
+<div data-role="page" id="cuento4-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento4"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento4"></p>
+	<a href="#final-1-cuento-4" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-4" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-4" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-4" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento4-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-4"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento4-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-4" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento4-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-4"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento4-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-4" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento4-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-4"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento4-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<!--Cuento 5 -->
+
+<div data-role="page" id="cuento5-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento5"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento5"></p>
+	<a href="#final-1-cuento-5" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-5" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-5" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-5" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento5-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-5"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento5-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-5" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento5-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-5"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento5-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-5" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento5-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-5"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento5-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<!-- cuento 6 -->
+
+<div data-role="page" id="cuento6-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento6"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento6"></p>
+	<a href="#final-1-cuento-6" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-6" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-6" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-6" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento6-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-6"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento6-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-6" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento6-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-6"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento5-leer-6" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-6" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento6-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-6"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento6-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<!-- cuento 7 -->
+
+<div data-role="page" id="cuento7-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento7"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento7"></p>
+	<a href="#final-1-cuento-7" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-7" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-7" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-7" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento7-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-7"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento7-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-7" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento7-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-7"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento7-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-7" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento7-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-7"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento7-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 7 -->
+<div data-role="page" id="cuento7-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento7"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento7"></p>
+	<a href="#final-1-cuento-7" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-7" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-7" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-7" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento7-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-7"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento7-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-7" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento7-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-7"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento7-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-7" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento7-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-7"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento7-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 8 -->
+<div data-role="page" id="cuento8-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento8"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento8"></p>
+	<a href="#final-1-cuento-8" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-8" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-8" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-8" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento8-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-8"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento8-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-8" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento8-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-8"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento8-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-8" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento8-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-8"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento8-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 9 -->
+<div data-role="page" id="cuento9-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento9"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento9"></p>
+	<a href="#final-1-cuento-9" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-9" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-9" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-9" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento9-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-9"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento9-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-9" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento9-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-9"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento9-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-9" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento9-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-9"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento9-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 10 -->
+<div data-role="page" id="cuento10-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento10"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento10"></p>
+	<a href="#final-1-cuento-10" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-10" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-10" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-10" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento10-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-10"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento10-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-10" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento10-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-10"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento10-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-10" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento10-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-10"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento10-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 11 -->
+<div data-role="page" id="cuento11-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento11"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento11"></p>
+	<a href="#final-1-cuento-11" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-11" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-11" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-11" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento11-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-11"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento11-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-11" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento11-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-11"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento11-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-11" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento11-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-11"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento11-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 12 -->
+<div data-role="page" id="cuento12-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento12"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento12"></p>
+	<a href="#final-1-cuento-12" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-12" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-12" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-12" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento12-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-12"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento12-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-12" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento12-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-12"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento12-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-12" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento12-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-12"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento12-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 13 -->
+<div data-role="page" id="cuento13-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento13"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento13"></p>
+	<a href="#final-1-cuento-13" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-13" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-13" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-13" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento13-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-13"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento13-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-13" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento13-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-13"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento13-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-13" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento13-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-13"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento13-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 14 -->
+<div data-role="page" id="cuento14-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento14"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento14"></p>
+	<a href="#final-1-cuento-14" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-14" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-14" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-14" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento14-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-14"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento14-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-14" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento14-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-14"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento14-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-14" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento14-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-14"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento14-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 15 -->
+<div data-role="page" id="cuento15-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento15"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento15"></p>
+	<a href="#final-1-cuento-15" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-15" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-15" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-15" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento15-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-15"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento15-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-15" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento15-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-15"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento15-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-15" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento15-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-15"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento15-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 16 -->
+<div data-role="page" id="cuento16-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento16"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento16"></p>
+	<a href="#final-1-cuento-16" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-16" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-16" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-16" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento16-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-16"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento16-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-16" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento16-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-16"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento16-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-16" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento16-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-16"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento16-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 17 -->
+<div data-role="page" id="cuento17-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento17"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento17"></p>
+	<a href="#final-1-cuento-17" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-17" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-17" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-17" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento17-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-17"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento17-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-17" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento17-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-17"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento17-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-17" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento17-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-17"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento17-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 18 -->
+<div data-role="page" id="cuento18-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento18"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento18"></p>
+	<a href="#final-1-cuento-18" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-18" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-18" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-18" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento18-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-18"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento18-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-18" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento18-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-18"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento18-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-18" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento18-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-18"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento18-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+<!-- cuento 19 -->
+<div data-role="page" id="cuento19-leer-1" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento19"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="cuento19"></p>
+	<a href="#final-1-cuento-19" class="ui-btn">Final 1</a>
+    <a href="#final-2-cuento-19" class="ui-btn">Final 2</a>
+    <a href="#final-3-cuento-19" class="ui-btn">Final 3</a>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<h2>Tales of Stovial</h2>
+    </div>
+</div> 
+
+<div data-role="page" id="final-1-cuento-19" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento19-1"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-1-c-cuento-19"></p>
+	
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento19-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<div data-role="page" id="final-2-cuento-19" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento19-2"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-2-c-cuento-19"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento19-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div> 
+
+<div data-role="page" id="final-3-cuento-19" data-transition="flip" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+    <a href="#menu-cuentos" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    <h1  id="h1-cuento19-3"><h1></div>	
+    <div role="main" class="ui-content" style="color:#000">
+        <p id="final-3-c-cuento-19"></p>
+    </div>
+    <div data-role="footer" class="ui-footer-fixed">
+    	<a href="#cuento19-leer-1" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</a>
+    </div>
+</div>
+
+<!-- Java S -->
+<script type="text/javascript">
+// JavaScript Document
+$(function(){
+	$("#cerrar").click(function(){
+		navigator.app.exitApp();
+	});
+	
+	$(document).ready(function(){
+	$.ajax({
+		url: 'http://stovial.xyz/app/historia.php',
+		method: 'GET',
+		type: 'json',
+		success: function(data){
+			$.each(data, function(i, elemento){
+				var li = '<li class="ui-first-child"><a href="#cuento'+data[i].id+'-leer-1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">' + data[i].nombre + '</a></li>';
+				
+				$("#lista_cuentos_menu").append(li);
+
+				$("#h1-cuento" + data[i].id).html(data[i].nombre);
+				$("#h1-cuento" + data[i].id + "-1").html(data[i].nombre);
+				$("#h1-cuento" + data[i].id + "-2").html(data[i].nombre);
+				$("#h1-cuento" + data[i].id + "-3").html(data[i].nombre);
+				$("#cuento" + data[i].id ).append(data[i].texto);
+				$("#final-1-c-cuento-" + data[i].id).append(data[i].final_1);
+				$("#final-2-c-cuento-" + data[i].id).append(data[i].final_2);
+				$("#final-3-c-cuento-" + data[i].id).append(data[i].final_3);
+			});
+			
+			//$("#cuento1").append(data[0].texto);
+		}
+		
+		});
+	});
+});
+</script>
+</body>
+</html>
